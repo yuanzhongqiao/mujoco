@@ -1,188 +1,147 @@
-<h1>
-  <a href="#"><img alt="MuJoCo" src="banner.png" width="100%"/></a>
-</h1>
-
-<p>
-  <a href="https://github.com/google-deepmind/mujoco/actions/workflows/build.yml?query=branch%3Amain" alt="GitHub Actions">
-    <img src="https://img.shields.io/github/actions/workflow/status/google-deepmind/mujoco/build.yml?branch=main">
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto">
+  <a href="#"><img alt="穆乔科" src="/google-deepmind/mujoco/raw/main/banner.png" width="100%" style="max-width: 100%;"></a>
+</h1><a id="user-content---" class="anchor" aria-label="永久链接：" href="#--"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto">
+  <a href="https://github.com/google-deepmind/mujoco/actions/workflows/build.yml?query=branch%3Amain" alt="GitHub 操作">
+    <img src="https://camo.githubusercontent.com/1a517ec56565e1689c5115a412966a28a4d9038684ec1cb6fabef9eff49eccc1/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f616374696f6e732f776f726b666c6f772f7374617475732f676f6f676c652d646565706d696e642f6d756a6f636f2f6275696c642e796d6c3f6272616e63683d6d61696e" data-canonical-src="https://img.shields.io/github/actions/workflow/status/google-deepmind/mujoco/build.yml?branch=main" style="max-width: 100%;">
   </a>
-  <a href="https://mujoco.readthedocs.io/" alt="Documentation">
-    <img src="https://readthedocs.org/projects/mujoco/badge/?version=latest">
+  <a href="https://mujoco.readthedocs.io/" alt="文档" rel="nofollow">
+    <img src="https://camo.githubusercontent.com/1c9d74a6dd639075e0d7ffe09ff095d4ea58892e9322ba607b924c606d133a5f/68747470733a2f2f72656164746865646f63732e6f72672f70726f6a656374732f6d756a6f636f2f62616467652f3f76657273696f6e3d6c6174657374" data-canonical-src="https://readthedocs.org/projects/mujoco/badge/?version=latest" style="max-width: 100%;">
   </a>
-  <a href="https://github.com/google-deepmind/mujoco/blob/main/LICENSE" alt="License">
-    <img src="https://img.shields.io/github/license/google-deepmind/mujoco">
+  <a href="https://github.com/google-deepmind/mujoco/blob/main/LICENSE" alt="执照">
+    <img src="https://camo.githubusercontent.com/d3469fda85d709630425a2b932054ad8b7871d55f030ca89650a1466102578e0/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6c6963656e73652f676f6f676c652d646565706d696e642f6d756a6f636f" data-canonical-src="https://img.shields.io/github/license/google-deepmind/mujoco" style="max-width: 100%;">
   </a>
 </p>
-
-**MuJoCo** stands for **Mu**lti-**Jo**int dynamics with **Co**ntact. It is a
-general purpose physics engine that aims to facilitate research and development
-in robotics, biomechanics, graphics and animation, machine learning, and other
-areas which demand fast and accurate simulation of articulated structures
-interacting with their environment.
-
-This repository is maintained by [Google DeepMind](https://www.deepmind.com/).
-
-MuJoCo has a C API and is intended for researchers and developers. The runtime
-simulation module is tuned to maximize performance and operates on low-level
-data structures that are preallocated by the built-in XML compiler. The library
-includes interactive visualization with a native GUI, rendered in OpenGL. MuJoCo
-further exposes a large number of utility functions for computing
-physics-related quantities.
-
-We also provide [Python bindings] and a plug-in for the [Unity] game engine.
-
-## Documentation
-
-MuJoCo's documentation can be found at [mujoco.readthedocs.io]. Upcoming features due for the next
-release can be found in the [changelog] in the latest branch.
-
-## Getting Started
-
-There are two easy ways to get started with MuJoCo:
-
-1. **Run `simulate` on your machine.**
-[This video](https://www.youtube.com/watch?v=0ORsj_E17B0) shows a screen capture
-of `simulate`, MuJoCo's native interactive viewer. Follow the steps described in
-the [Getting Started] section of the documentation to get `simulate` running on
-your machine.
-
-2. **Explore our online IPython notebooks.**
-If you are a Python user, you might want to start with our tutorial notebooks
-running on Google Colab:
-
- - The **introductory tutorial** teaches MuJoCo basics:
-   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/google-deepmind/mujoco/blob/main/python/tutorial.ipynb)
- - The **LQR** tutorial synthesizes a linear-quadratic controller, balancing a humanoid on one leg:
-   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/google-deepmind/mujoco/blob/main/python/LQR.ipynb)
- - The **least-squares** tutorial explains how to use the Python-based nonlinear least-squares solver:
-   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/google-deepmind/mujoco/blob/main/python/least_squares.ipynb)
- - The **MJX** tutorial provides usage examples of
-   [MuJoCo XLA](https://mujoco.readthedocs.io/en/stable/mjx.html), a branch of MuJoCo written in
-   JAX:
-   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/google-deepmind/mujoco/blob/main/mjx/tutorial.ipynb)
-
-## Installation
-
-### Prebuilt binaries
-
-Versioned releases are available as precompiled binaries from the GitHub
-[releases page], built for Linux (x86-64 and AArch64), Windows (x86-64 only),
-and macOS (universal). This is the recommended way to use the software.
-
-### Building from source
-
-Users who wish to build MuJoCo from source should consult the [build from
-source] section of the documentation. However, please note that the commit at
-the tip of the `main` branch may be unstable.
-
-### Python (>= 3.8)
-
-The native Python bindings, which come pre-packaged with a copy of MuJoCo, can
-be installed from [PyPI] via:
-
-```bash
-pip install mujoco
-```
-
-Note that Pre-built Linux wheels target `manylinux2014`, see
-[here](https://github.com/pypa/manylinux) for compatible distributions. For more
-information such as building the bindings from source, see the [Python bindings]
-section of the documentation.
-
-## Contributing
-
-We welcome community engagement: questions, requests for help, bug reports and
-feature requests. To read more about bug reports, feature requests and more
-ambitious contributions, please see our [contributors guide](CONTRIBUTING.md)
-and [style guide](STYLEGUIDE.md).
-
-## Asking Questions
-
-Questions and requests for help are welcome on the GitHub
-[Issues](https://github.com/google-deepmind/mujoco/issues) page and should focus
-on a specific problem or question.
-
-[Discussions](https://github.com/google-deepmind/mujoco/discussions) should
-address wider concerns that might require input from multiple participants.
-
-Here are some guidelines for asking good questions:
-
-1. Search for existing questions or issues that touch on the same subject.
-
-   You can add comments to existing threads or start new ones. If you start a
-   new thread and there are existing relevant threads, please link to them.
-
-2. Use a clear and specific title. Try to include keywords that will make your
-   question easy for other to find in the future.
-
-3. Introduce yourself and your project more generally.
-
-   If your level of expertise is exceptional (either high or low), and it might
-   be relevant to what we can assume you know, please state that as well.
-
-4. Take a step back and tell us what you're trying to accomplish, if we
-   understand you goal we might suggest a different type of solution than the
-   one you are having problems with
-
-5. Make it easy for others to reproduce the problem or understand your question.
-
-   If this requires a model, please include it. Try to make the model minimal:
-   remove elements that are unrelated to your question. Pure XML models should
-   be inlined. Models requiring binary assets (meshes, textures), should be
-   attached as a `.zip` file. Please make sure the included model is loadable
-   before you attach it.
-
-6. Include an illustrative screenshot or video, if relevant.
-
-7. Tell us how you are accessing MuJoCo (C API, Python bindings, etc.) and which
-   MuJoCo version and operating system you are using.
-
-## Related software
-MuJoCo forms the backbone of many environment packages, but these are too many
-to list here individually. Below we focus on bindings and converters.
-
-### Bindings
-
-These packages give users of various languages access to MuJoCo functionality:
-
-#### First-party bindings:
-
-- [Python bindings](https://mujoco.readthedocs.io/en/stable/python.html)
-  - [dm_control](https://github.com/google-deepmind/dm_control), Google
-    DeepMind's related environment stack, includes
-    [PyMJCF](https://github.com/google-deepmind/dm_control/blob/main/dm_control/mjcf/README.md),
-    a module for procedural manipulation of MuJoCo models.
-- [C# bindings and Unity plug-in](https://mujoco.readthedocs.io/en/stable/unity.html)
-
-#### Third-party bindings:
-
-- **WebAssembly**: [mujoco_wasm](https://github.com/zalo/mujoco_wasm) by [@zalo](https://github.com/zalo) with contributions by
-  [@kevinzakka](https://github.com/kevinzakka), based on the [emscripten build](https://github.com/stillonearth/MuJoCo-WASM) by
-  [@stillonearth](https://github.com/stillonearth).
-
-  :arrow_right: [Click here](https://zalo.github.io/mujoco_wasm/) for a live demo of MuJoCo running in your browser.
-- **MATLAB Simulink**: [Simulink Blockset for MuJoCo Simulator](https://github.com/mathworks-robotics/mujoco-simulink-blockset)
-  by [Manoj Velmurugan](https://github.com/vmanoj1996).
-- **Swift**: [swift-mujoco](https://github.com/liuliu/swift-mujoco)
-- **Java**: [mujoco-java](https://github.com/CommonWealthRobotics/mujoco-java)
-- **Julia**: [MuJoCo.jl](https://github.com/JamieMair/MuJoCo.jl)
-
-
-### Converters
-
-- **OpenSim**: [MyoConverter](https://github.com/MyoHub/myoconverter) converts
-  OpenSim models to MJCF.
-- **SDFormat**: [gz-mujoco](https://github.com/gazebosim/gz-mujoco/) is a
-  two-way SDFormat <-> MJCF conversion tool.
-- **OBJ**: [obj2mjcf](https://github.com/kevinzakka/obj2mjcf)
-  a script for converting composite OBJ files into a loadable MJCF model.
-
-## Citation
-
-If you use MuJoCo for published research, please cite:
-
-```
-@inproceedings{todorov2012mujoco,
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MuJoCo</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">代表具有</font><strong><font style="vertical-align: inherit;">接触</font></strong><font style="vertical-align: inherit;">的</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">多</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">关节</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">动态</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。它是一种通用物理引擎，旨在促进机器人、生物力学、图形和动画、机器学习以及其他需要快速准确地模拟与其环境相互作用的铰接结构的领域的研究和开发。</font></font><strong><font style="vertical-align: inherit;"></font></strong><font style="vertical-align: inherit;"></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"></font><a href="https://www.deepmind.com/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该存储库由Google DeepMind</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">维护</font><font style="vertical-align: inherit;">。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MuJoCo 有一个 C API，供研究人员和开发人员使用。运行时模拟模块经过调整以最大限度地提高性能，并在由内置 XML 编译器预先分配的低级数据结构上运行。该库包括带有本机 GUI 的交互式可视化，以 OpenGL 渲染。 MuJoCo 进一步公开了大量用于计算物理相关量的实用函数。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们还为</font><a href="https://unity.com/" rel="nofollow"><font style="vertical-align: inherit;">Unity游戏引擎提供</font></a></font><a href="https://mujoco.readthedocs.io/en/stable/python.html#python-bindings" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Python 绑定</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和插件</font><font style="vertical-align: inherit;">。</font></font><a href="https://unity.com/" rel="nofollow"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文档</font></font></h2><a id="user-content-documentation" class="anchor" aria-label="永久链接：文档" href="#documentation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"></font><a href="https://mujoco.readthedocs.io" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MuJoCo 的文档可以在mujoco.readthedocs.io</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">找到</font><font style="vertical-align: inherit;">。下一个版本即将推出的功能可以在</font><font style="vertical-align: inherit;">最新分支的</font></font><a href="https://mujoco.readthedocs.io/en/latest/changelog.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">变更日志中找到。</font></font></a><font style="vertical-align: inherit;"></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">入门</font></font></h2><a id="user-content-getting-started" class="anchor" aria-label="永久链接：开始使用" href="#getting-started"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">有两种简单的方法可以开始使用 MuJoCo：</font></font></p>
+<ol dir="auto">
+<li>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在你的机器上运行</font></font><code>simulate</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></strong>
+<a href="https://www.youtube.com/watch?v=0ORsj_E17B0" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该视频</font></font></a><font style="vertical-align: inherit;"></font><code>simulate</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">显示了MuJoCo 的本机交互式查看器</font><font style="vertical-align: inherit;">的屏幕截图。按照</font><font style="vertical-align: inherit;">文档的</font></font><a href="https://mujoco.readthedocs.io/en/latest/programming#getting-started" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">入门</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">部分中描述的步骤在</font></font><code>simulate</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您的计算机上运行。</font></font></p>
+</li>
+<li>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">探索我们的在线 IPython 笔记本。</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+如果您是 Python 用户，您可能想从在 Google Colab 上运行的教程笔记本开始：</font></font></p>
+</li>
+</ol>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">入门教程</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">教授</font><font style="vertical-align: inherit;">MuJoCo 基础知识：
+</font></font><a href="https://colab.research.google.com/github/google-deepmind/mujoco/blob/main/python/tutorial.ipynb" rel="nofollow"><img src="https://camo.githubusercontent.com/f5e0d0538a9c2972b5d413e0ace04cecd8efd828d133133933dfffec282a4e1b/68747470733a2f2f636f6c61622e72657365617263682e676f6f676c652e636f6d2f6173736574732f636f6c61622d62616467652e737667" alt="在 Colab 中打开" data-canonical-src="https://colab.research.google.com/assets/colab-badge.svg" style="max-width: 100%;"></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">LQR</font><font style="vertical-align: inherit;">教程综合了一个线性二次控制器，用一条腿平衡人形机器人
+</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：</font></font></strong><font style="vertical-align: inherit;"></font><a href="https://colab.research.google.com/github/google-deepmind/mujoco/blob/main/python/LQR.ipynb" rel="nofollow"><img src="https://camo.githubusercontent.com/f5e0d0538a9c2972b5d413e0ace04cecd8efd828d133133933dfffec282a4e1b/68747470733a2f2f636f6c61622e72657365617263682e676f6f676c652e636f6d2f6173736574732f636f6c61622d62616467652e737667" alt="在 Colab 中打开" data-canonical-src="https://colab.research.google.com/assets/colab-badge.svg" style="max-width: 100%;"></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">最小二乘</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">教程</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">解释了如何使用基于Python的非线性最小二乘求解器：
+</font></font><a href="https://colab.research.google.com/github/google-deepmind/mujoco/blob/main/python/least_squares.ipynb" rel="nofollow"><img src="https://camo.githubusercontent.com/f5e0d0538a9c2972b5d413e0ace04cecd8efd828d133133933dfffec282a4e1b/68747470733a2f2f636f6c61622e72657365617263682e676f6f676c652e636f6d2f6173736574732f636f6c61622d62616467652e737667" alt="在 Colab 中打开" data-canonical-src="https://colab.research.google.com/assets/colab-badge.svg" style="max-width: 100%;"></a></li>
+<li><font style="vertical-align: inherit;"></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MJX</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">教程提供了</font></font><a href="https://mujoco.readthedocs.io/en/stable/mjx.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MuJoCo XLA</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">的使用示例
+</font><font style="vertical-align: inherit;">，MuJoCo XLA 是用 JAX 编写的 MuJoCo 的一个分支：
+</font></font><a href="https://colab.research.google.com/github/google-deepmind/mujoco/blob/main/mjx/tutorial.ipynb" rel="nofollow"><img src="https://camo.githubusercontent.com/f5e0d0538a9c2972b5d413e0ace04cecd8efd828d133133933dfffec282a4e1b/68747470733a2f2f636f6c61622e72657365617263682e676f6f676c652e636f6d2f6173736574732f636f6c61622d62616467652e737667" alt="在 Colab 中打开" data-canonical-src="https://colab.research.google.com/assets/colab-badge.svg" style="max-width: 100%;"></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装</font></font></h2><a id="user-content-installation" class="anchor" aria-label="永久链接：安装" href="#installation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">预构建的二进制文件</font></font></h3><a id="user-content-prebuilt-binaries" class="anchor" aria-label="永久链接：预构建的二进制文件" href="#prebuilt-binaries"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">版本化版本可从 GitHub
+</font></font><a href="https://github.com/google-deepmind/mujoco/releases"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">版本页面</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以预编译二进制文件的形式获取，专为 Linux（x86-64 和 AArch64）、Windows（仅限 x86-64）和 macOS（通用）而构建。这是使用该软件的推荐方式。</font></font></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">从源头构建</font></font></h3><a id="user-content-building-from-source" class="anchor" aria-label="永久链接：从源代码构建" href="#building-from-source"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">希望从源代码构建 MuJoCo 的用户应查阅</font><font style="vertical-align: inherit;">文档的</font></font><a href="https://mujoco.readthedocs.io/en/latest/programming#building-mujoco-from-source" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">从源代码构建</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">部分。但请注意，分支顶端的提交</font></font><code>main</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可能不稳定。</font></font></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Python (&gt;= 3.8)</font></font></h3><a id="user-content-python--38" class="anchor" aria-label="永久链接：Python (>= 3.8)" href="#python--38"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">原生 Python 绑定预先打包了 MuJoCo 的副本，可以通过以下方式从</font></font><a href="https://pypi.org/project/mujoco/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PyPI</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装：</font></font></p>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>pip install mujoco</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="pip install mujoco" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请注意，预构建的 Linux 轮子目标为</font></font><code>manylinux2014</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，请参阅
+</font></font><a href="https://github.com/pypa/manylinux"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">此处</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">了解兼容的发行版。有关从源代码构建绑定等更多信息，请参阅</font><font style="vertical-align: inherit;">
+文档的</font></font><a href="https://mujoco.readthedocs.io/en/stable/python.html#python-bindings" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Python 绑定部分。</font></font></a><font style="vertical-align: inherit;"></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贡献</font></font></h2><a id="user-content-contributing" class="anchor" aria-label="永久链接：贡献" href="#contributing"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们欢迎社区参与：问题、帮助请求、错误报告和功能请求。要了解有关错误报告、功能请求和更雄心勃勃的贡献的更多信息，请参阅我们的</font></font><a href="/google-deepmind/mujoco/blob/main/CONTRIBUTING.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贡献者指南</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+和</font></font><a href="/google-deepmind/mujoco/blob/main/STYLEGUIDE.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">风格指南</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">问问题</font></font></h2><a id="user-content-asking-questions" class="anchor" aria-label="永久链接：提出问题" href="#asking-questions"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"></font><a href="https://github.com/google-deepmind/mujoco/issues"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">欢迎在 GitHub问题</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">页面上提出问题和请求帮助
+</font><font style="vertical-align: inherit;">，并且应重点关注特定问题或问题。</font></font></p>
+<p dir="auto"><a href="https://github.com/google-deepmind/mujoco/discussions"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">讨论</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">应解决可能需要多个参与者提供意见的更广泛的问题。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以下是提出好问题的一些指导原则：</font></font></p>
+<ol dir="auto">
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">搜索涉及同一主题的现有问题或问题。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可以向现有线程添加评论或启动新线程。如果您开始一个新线程并且存在现有的相关线程，请链接到它们。</font></font></p>
+</li>
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用清晰且具体的标题。尝试包含一些关键字，以便其他人将来可以轻松找到您的问题。</font></font></p>
+</li>
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">更概括地介绍您自己和您的项目。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您的专业知识水平非常出色（无论高还是低），并且可能与我们假设您知道的内容相关，也请注明。</font></font></p>
+</li>
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">退后一步，告诉我们您想要实现的目标，如果我们理解您的目标，我们可能会建议一种与您遇到问题不同类型的解决方案</font></font></p>
+</li>
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">让其他人轻松重现问题或理解您的问题。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果这需要模型，请包含它。尝试使模型最小化：删除与您的问题无关的元素。纯 XML 模型应该内联。需要二进制资源（网格、纹理）的模型应作为</font></font><code>.zip</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文件附加。在附加之前，请确保随附的模型可加载。</font></font></p>
+</li>
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">包括说明性屏幕截图或视频（如果相关）。</font></font></p>
+</li>
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">告诉我们您如何访问 MuJoCo（C API、Python 绑定等）以及您正在使用哪个 MuJoCo 版本和操作系统。</font></font></p>
+</li>
+</ol>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">相关软件</font></font></h2><a id="user-content-related-software" class="anchor" aria-label="永久链接：相关软件" href="#related-software"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MuJoCo 构成了许多环境包的支柱，但这些环境包太多，无法在此处单独列出。下面我们重点关注绑定和转换器。</font></font></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">绑定</font></font></h3><a id="user-content-bindings" class="anchor" aria-label="永久链接：绑定" href="#bindings"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这些软件包使各种语言的用户可以访问 MuJoCo 功能：</font></font></p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第一方绑定：</font></font></h4><a id="user-content-first-party-bindings" class="anchor" aria-label="永久链接：第一方绑定：" href="#first-party-bindings"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://mujoco.readthedocs.io/en/stable/python.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Python 绑定</font></font></a>
+<ul dir="auto">
+<li><a href="https://github.com/google-deepmind/dm_control"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">dm_control</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">是 Google DeepMind 的相关环境堆栈，包括
+</font></font><a href="https://github.com/google-deepmind/dm_control/blob/main/dm_control/mjcf/README.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PyMJCF</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，这是一个用于 MuJoCo 模型程序操作的模块。</font></font></li>
+</ul>
+</li>
+<li><a href="https://mujoco.readthedocs.io/en/stable/unity.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">C# 绑定和 Unity 插件</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第三方绑定：</font></font></h4><a id="user-content-third-party-bindings" class="anchor" aria-label="永久链接：第三方绑定：" href="#third-party-bindings"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">WebAssembly</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：</font><a href="https://github.com/zalo"><font style="vertical-align: inherit;">@zalo</font></a><font style="vertical-align: inherit;">的</font></font><a href="https://github.com/zalo/mujoco_wasm"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">mujoco_wasm ， </font></font></a><font style="vertical-align: inherit;"><a href="https://github.com/kevinzakka"><font style="vertical-align: inherit;">@kevinzakka</font></a><font style="vertical-align: inherit;">的贡献
+</font><font style="vertical-align: inherit;">，基于</font><a href="https://github.com/stillonearth"><font style="vertical-align: inherit;">@stilloneearth</font></a><a href="https://github.com/stillonearth/MuJoCo-WASM"><font style="vertical-align: inherit;">构建</font></a><font style="vertical-align: inherit;">的
+emscripten </font><font style="vertical-align: inherit;">。</font></font><a href="https://github.com/zalo"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"></font><a href="https://github.com/kevinzakka"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"></font><a href="https://github.com/stillonearth/MuJoCo-WASM"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"></font><a href="https://github.com/stillonearth"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">➡️</font></font><a href="https://zalo.github.io/mujoco_wasm/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">单击此处</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">查看在浏览器中运行的 MuJoCo 的现场演示。</font></font></p>
+</li>
+<li>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MATLAB Simulink</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：</font><a href="https://github.com/vmanoj1996"><font style="vertical-align: inherit;">Manoj Velmurugan</font></a><font style="vertical-align: inherit;">
+用于</font></font><a href="https://github.com/mathworks-robotics/mujoco-simulink-blockset"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MuJoCo 模拟器的 Simulink 模块集</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font><a href="https://github.com/vmanoj1996"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"></font></p>
+</li>
+<li>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">斯威夫特</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：</font></font><a href="https://github.com/liuliu/swift-mujoco"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">斯威夫特-mujoco</font></font></a></p>
+</li>
+<li>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Java</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：</font></font><a href="https://github.com/CommonWealthRobotics/mujoco-java"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">mujoco-java</font></font></a></p>
+</li>
+<li>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">朱莉娅</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：</font></font><a href="https://github.com/JamieMair/MuJoCo.jl"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MuJoCo.jl</font></font></a></p>
+</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">转换器</font></font></h3><a id="user-content-converters" class="anchor" aria-label="永久链接：转换器" href="#converters"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OpenSim</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：</font></font><a href="https://github.com/MyoHub/myoconverter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MyoConverter</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将 OpenSim 模型转换为 MJCF。</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SDFormat</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：</font></font><a href="https://github.com/gazebosim/gz-mujoco/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">gz-mujoco</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">是一个双向 SDFormat &lt;-&gt; MJCF 转换工具。</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OBJ</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：</font></font><a href="https://github.com/kevinzakka/obj2mjcf"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">obj2mjcf</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+用于将复合 OBJ 文件转换为可加载 MJCF 模型的脚本。</font></font></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">引文</font></font></h2><a id="user-content-citation" class="anchor" aria-label="永久链接：引文" href="#citation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您使用 MuJoCo 发表研究，请引用：</font></font></p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>@inproceedings{todorov2012mujoco,
   title={MuJoCo: A physics engine for model-based control},
   author={Todorov, Emanuel and Erez, Tom and Tassa, Yuval},
   booktitle={2012 IEEE/RSJ International Conference on Intelligent Robots and Systems},
@@ -191,31 +150,29 @@ If you use MuJoCo for published research, please cite:
   organization={IEEE},
   doi={10.1109/IROS.2012.6386109}
 }
-```
-
-## License and Disclaimer
-
-Copyright 2021 DeepMind Technologies Limited.
-
-Box collision code ([`engine_collision_box.c`](https://github.com/google-deepmind/mujoco/blob/main/src/engine/engine_collision_box.c))
-is Copyright 2016 Svetoslav Kolev.
-
-ReStructuredText documents, images, and videos in the `doc` directory are made
-available under the terms of the Creative Commons Attribution 4.0 (CC BY 4.0)
-license. You may obtain a copy of the License at
-https://creativecommons.org/licenses/by/4.0/legalcode.
-
-Source code is licensed under the Apache License, Version 2.0. You may obtain a
-copy of the License at https://www.apache.org/licenses/LICENSE-2.0.
-
-This is not an officially supported Google product.
-
-[build from source]: https://mujoco.readthedocs.io/en/latest/programming#building-mujoco-from-source
-[Getting Started]: https://mujoco.readthedocs.io/en/latest/programming#getting-started
-[Unity]: https://unity.com/
-[releases page]: https://github.com/google-deepmind/mujoco/releases
-[GitHub Issues]: https://github.com/google-deepmind/mujoco/issues
-[mujoco.readthedocs.io]: https://mujoco.readthedocs.io
-[changelog]: https://mujoco.readthedocs.io/en/latest/changelog.html
-[Python bindings]: https://mujoco.readthedocs.io/en/stable/python.html#python-bindings
-[PyPI]: https://pypi.org/project/mujoco/
+</code></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="@inproceedings{todorov2012mujoco,
+  title={MuJoCo: A physics engine for model-based control},
+  author={Todorov, Emanuel and Erez, Tom and Tassa, Yuval},
+  booktitle={2012 IEEE/RSJ International Conference on Intelligent Robots and Systems},
+  pages={5026--5033},
+  year={2012},
+  organization={IEEE},
+  doi={10.1109/IROS.2012.6386109}
+}" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">许可和免责声明</font></font></h2><a id="user-content-license-and-disclaimer" class="anchor" aria-label="永久链接：许可和免责声明" href="#license-and-disclaimer"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">版权所有 2021 DeepMind 技术有限公司。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">盒子碰撞代码 ( </font></font><a href="https://github.com/google-deepmind/mujoco/blob/main/src/engine/engine_collision_box.c"><code>engine_collision_box.c</code></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">) 版权所有 2016 Svetoslav Kolev。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目录中的 ReStructuredText 文档、图像和视频</font></font><code>doc</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">根据 Creative Commons Attribution 4.0 (CC BY 4.0) 许可条款提供。您可以在</font></font><a href="https://creativecommons.org/licenses/by/4.0/legalcode" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://creativecommons.org/licenses/by/4.0/legalcode</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">获取许可证副本
+</font><font style="vertical-align: inherit;">。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">源代码根据 Apache 许可证 2.0 版获得许可。您可以从</font></font><a href="https://www.apache.org/licenses/LICENSE-2.0" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://www.apache.org/licenses/LICENSE-2.0</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">获取许可证副本</font><font style="vertical-align: inherit;">。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这不是 Google 官方支持的产品。</font></font></p>
+</article></div>
